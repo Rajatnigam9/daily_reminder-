@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <script>
+            var ajaxreq;
+            function validate()
+            {
+                var div1=document.getElementById("error");
+                var htmlpw=document.getElementById("pw");
+                var nwpw=htmlid.value;
+                var pw=document.getElementById("repw").value;
+                if(nwpw!==pw)
+                {div1.innerhtml="Retype Password Not Match";
+                            return false;}                }
+                            
+            
+           
+        </script>
+  <title>Register Form</title>
+    </head>
+
+  <body>
+      <div align="center"><h3>Register Yourself</h3></div> 
+  <form action="InsertUser" name="UserRegistration" onSubmit="return(validate());">
+
+<table cellpadding="10" width="20%" bgcolor="white" align="center"
+
+  cellspacing="2">
+
+<tr>
+    <td>UserId</td>
+    <td><input type="text" name="userid" placeholder="Enter Your UserId" size="30" required="userId"></td>
+  </tr>
+  
+<tr>
+
+  <td>Name</td>
+
+  <td><input type=text name="names" placeholder="Name" size="30" required="Name"></td>
+
+  </tr>
+  <tr>
+  <td>MobileNo</td>
+
+  <td><input type="text" name="mobile" placeholder="MobileNo" size="30" required="MobileNo"></td>
+
+  </tr>
+
+<tr>
+    <td>New Password </td>  
+    <td><input type="Password" name="newpassword" placeholder="New Password" size="30" required="newpassword" id="pw">
+</tr>
+<tr>
+    <td>Retype Password </td>  
+    <td><input type="Password" name="repassword" placeholder="Retype Password" size="30" required="Retypepassword"id="repw" onkeypress="validate">
+    <td><div id="error"></div></td>
+</tr>
+
+<tr>
+
+  <td><input type="reset"></td>
+
+  <td colspan="2"><input type="submit" value="Submit Form" /></td>
+
+  </tr>
+
+  </table>
+
+  </form>
+  
+  </body>
+
+</html>
